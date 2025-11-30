@@ -1,0 +1,148 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraph: hsla(0, 0%, 100%, 0.75);
+  --primary: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.cars {
+  display: grid;
+  max-width: 32rem;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.car-info {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.car-info > * {
+  flex: 1;
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  color: var(--bright-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+  color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.car-icon {
+  width: min-content;
+}
+
+.car-model {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.car-desc {
+  color: var(--paragraph);
+  line-height: 1.6;
+  font-weight: 400;
+  padding-right: 1rem;
+}
+
+.car-cta:link,
+.car-cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: inherit;
+  background-color: var(--primary);
+  border-radius: 10rem;
+  font-size: 1.4rem;
+  width: max-content;
+  transition: all 0.3s;
+  border: 2px solid var(--primary);
+  margin-top: 2rem;
+}
+
+.car-cta:hover,
+.car-cta:active {
+  background-color: transparent;
+  color: var(--primary);
+}
+
+/* desktop design */
+@media (min-width: 768px) {
+  .cars {
+    max-width: 68rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .car-desc {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cars {
+    max-width: 90rem;
+  }
+
+  .car-info {
+    gap: 4rem;
+    padding: 3.6rem;
+  }
+
+  .car-cta:link,
+  .car-cta:visited {
+    margin-top: 4rem;
+  }
+
+  .car-desc {
+    padding-right: 2.4rem;
+  }
+
+  .car-model {
+    font-size: 4rem;
+  }
+}

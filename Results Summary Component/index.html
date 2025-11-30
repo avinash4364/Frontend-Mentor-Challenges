@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="result">
+        <h1 class="primary-heading result-heading">Your Result</h1>
+        <div class="score-display">
+          <p class="score"><span>76</span> of 100</p>
+        </div>
+        <p class="result-text">Great</p>
+        <p class="result-summary">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary">
+        <h1 class="primary-heading summary-heading">Summary</h1>
+        <ul class="summary-score--list">
+          <li class="summary-score">
+            <img src="./assets/images/icon-reaction.svg" alt="" />
+            <p class="score-title">Reaction</p>
+            <p class="out-of"><span>80</span> / 100</p>
+          </li>
+          <li class="summary-score">
+            <img src="./assets/images/icon-memory.svg" alt="" />
+            <p class="score-title">Memory</p>
+            <p class="out-of"><span>92</span> / 100</p>
+          </li>
+          <li class="summary-score">
+            <img src="./assets/images/icon-verbal.svg" alt="" />
+            <p class="score-title">Verbal</p>
+            <p class="out-of"><span>61</span> / 100</p>
+          </li>
+          <li class="summary-score">
+            <img src="./assets/images/icon-visual.svg" alt="" />
+            <p class="score-title">Visual</p>
+            <p class="out-of"><span>72</span> / 100</p>
+          </li>
+        </ul>
+        <button type="submit" class="summary-btn">Continue</button>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/avinash4364"
+        >Avinash Kumar Yadav</a
+      >.
+    </div>
+  </body>
+</html>
